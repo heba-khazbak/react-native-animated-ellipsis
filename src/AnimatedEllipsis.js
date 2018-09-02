@@ -72,9 +72,9 @@ export default class AnimatedEllipsis extends Component {
   render () {
     let dots = this._animation_state.dot_opacities.map((o, i) => {
       if (o._value === 0) {
-        return <Animated.Text key={key} style={{ color: 'transparent' }}> .</Animated.Text>;
+        return <Animated.Text key={i} style={{ color: 'transparent' }}> .</Animated.Text>;
       }
-      return <Animated.Text key={key} style={{ opacity: o }}> .</Animated.Text>;
+      return <Animated.Text key={i} style={{ opacity: o }}> .</Animated.Text>;
     }
     );
 

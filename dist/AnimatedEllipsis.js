@@ -56,13 +56,13 @@ export default class AnimatedEllipsis extends Component {
       if (o._value === 0) {
         return React.createElement(
           Animated.Text,
-          { key: key, style: { color: 'transparent' } },
+          { key: i, style: { color: 'transparent' } },
           ' .'
         );
       }
       return React.createElement(
         Animated.Text,
-        { key: key, style: { opacity: o } },
+        { key: i, style: { opacity: o } },
         ' .'
       );
     });
